@@ -1,1 +1,22 @@
-hola
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: hotel_mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+    ports:
+      - "3306:3306"
+    command:
+      - --log-bin=mysql-bin
+      - --binlog-format=ROW
+      - --server-id=1
+      - --binlog-expire-logs-seconds=604800
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./scripts:/scripts:ro
+      - ./backups:/backups
+
+volumes:
+  mysql_data:	          
