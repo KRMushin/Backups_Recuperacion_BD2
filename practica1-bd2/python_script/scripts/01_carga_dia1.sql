@@ -2,157 +2,160 @@
 USE hotel_db;
 
 - CLIENTE -----------------------------
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (1, 'Alberto Hernán Guevara', 'alberto.hernan.91@example.com', '+52 55 3791 3810');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (2, 'Darío Canales', 'dario.canales.41@example.com', '+52 81 9984 7493');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (3, 'Araceli Villanueva', 'araceli.villanueva.23@live.com', '+52 614 1266 8732');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (4, 'Alma Alicia Cabán', 'alma.alicia.85@hotmail.com', '+52 55 0499 9315');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (5, 'Gabriel Santiago', 'gabriel.santiago.21@example.com', '+52 33 6882 7638');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (6, 'Sra. Noemí Farías', 'noemi.farias.87@example.com', '+52 614 2768 7537');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (7, 'Linda Garay', 'linda.garay.93@live.com', '+52 614 5730 6997');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (8, 'Patricia Eugenia Aguayo Crespo', 'patricia.eugenia.38@hotmail.com', '+52 44 0187 2248');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (9, 'Indira Eugenia Cortés', 'indira.eugenia.30@live.com', '+52 99 4666 7651');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (10, 'Jonás Canales', 'jonas.canales.45@example.com', '+52 33 4617 6955');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (11, 'Juan Bernardo Muñoz', 'juan.bernardo.23@example.com', '+52 99 1398 1052');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (12, 'Raquel Jaime Armas', 'raquel.jaime.55@hotmail.com', '+52 44 0683 1819');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (13, 'Nancy Blanca Ochoa Berríos', 'nancy.blanca.68@live.com', '+52 56 5180 6024');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (14, 'Francisca Nájera', 'francisca.najera.20@live.com', '+52 44 8537 4605');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (15, 'Srita. Virginia Barrios', 'virginia.barrios.89@hotmail.com', '+52 33 9556 6031');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (16, 'Gabino Longoria Bétancourt', 'gabino.longoria.18@example.com', '+52 33 3984 0994');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (17, 'Bruno Olivares', 'bruno.olivares.20@example.com', '+52 56 5201 9678');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (18, 'Lic. José Emilio Curiel', 'jose.emilio.45@hotmail.com', '+52 22 2283 1063');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (19, 'Irma Fuentes Jaramillo', 'irma.fuentes.57@hotmail.com', '+52 33 9094 9389');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (20, 'Uriel Enrique Tejeda', 'uriel.enrique.44@live.com', '+52 56 8275 6179');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (21, 'Emiliano Ríos', 'emiliano.rios.91@example.com', '+52 614 9886 1742');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (22, 'Estela Sandra Valdés', 'estela.sandra.41@example.com', '+52 662 5192 9647');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (23, 'Jerónimo Badillo', 'jeronimo.badillo.44@live.com', '+52 614 3047 6249');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (24, 'Alejandro Mata', 'alejandro.mata.97@hotmail.com', '+52 55 3174 2311');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (25, 'Estela Anabel Galarza', 'estela.anabel.14@hotmail.com', '+52 99 3693 5572');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (26, 'Dra. Dolores Sanabria', 'dolores.sanabria.18@example.com', '+52 22 2953 8251');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (27, 'Sara María Cristina Collazo', 'sara.maria.93@hotmail.com', '+52 99 8728 2117');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (28, 'Dr. Gerónimo Valentín', 'geronimo.valentin.68@example.com', '+52 44 1974 0864');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (29, 'Estefanía Viera', 'estefania.viera.41@live.com', '+52 614 7334 0307');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (30, 'Paola Laura Nájera', 'paola.laura.43@live.com', '+52 99 7932 0463');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (31, 'Darío Saucedo', 'dario.saucedo.61@hotmail.com', '+52 33 1956 6572');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (32, 'Arcelia Amelia Carmona Corral', 'arcelia.amelia.75@hotmail.com', '+52 56 0732 3852');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (33, 'Manuel Teodoro Barela Olmos', 'manuel.teodoro.24@example.com', '+52 81 9233 2642');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (34, 'Perla María Elena Tafoya', 'perla.maria.64@live.com', '+52 56 5264 2594');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (35, 'Sr. Claudio Terán', 'claudio.teran.58@live.com', '+52 662 7201 6525');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (36, 'Ing. César Lozada', 'cesar.lozada.42@live.com', '+52 55 9230 6093');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (37, 'Celia María Acosta', 'celia.maria.24@live.com', '+52 614 3681 2670');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (38, 'Dr. Patricio Caraballo', 'patricio.caraballo.92@hotmail.com', '+52 56 4039 2920');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (39, 'Dr. Elias Niño', 'elias.nino.65@example.com', '+52 662 0143 5578');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (40, 'Reynaldo Raúl Abrego Zamudio', 'reynaldo.raul.43@live.com', '+52 81 6913 9880');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (41, 'Marisela Almaraz Carrasco', 'marisela.almaraz.23@live.com', '+52 44 8675 8349');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (42, 'Georgina Grijalva Baeza', 'georgina.grijalva.74@live.com', '+52 33 2151 3739');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (43, 'Rufino Berríos', 'rufino.berrios.57@example.com', '+52 614 7218 2864');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (44, 'Omar Armando Tejada', 'omar.armando.10@live.com', '+52 22 6657 9548');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (45, 'Cristian Nicolás Ulloa de Jesús', 'cristian.nicolas.12@example.com', '+52 22 4227 3847');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (46, 'Lic. Fidel Tirado', 'fidel.tirado.40@example.com', '+52 33 7714 9359');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (47, 'Jacinto Ozuna', 'jacinto.ozuna.20@example.com', '+52 662 1028 9546');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (48, 'Luz Sierra Razo', 'luz.sierra.78@example.com', '+52 81 8955 0256');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (49, 'Gerónimo Francisco Javier Barela', 'geronimo.francisco.70@live.com', '+52 81 3657 5298');
-INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES (50, 'Alejandra Villalobos Urrutia', 'alejandra.villalobos.77@live.com', '+52 99 2942 7073');
+INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES
+        (1, 'Alberto Hernán Guevara', 'alberto.hernan.91@example.com', '+502 0435 6886'),
+        (2, 'Darío Canales', 'dario.canales.45@example.com', '+502 3095 8838'),
+        (3, 'Araceli Villanueva', 'araceli.villanueva.27@live.com', '+502 1475 6669'),
+        (4, 'Alma Alicia Cabán', 'alma.alicia.96@live.com', '+502 7419 7857'),
+        (5, 'Gabriel Santiago', 'gabriel.santiago.21@live.com', '+502 5762 9388'),
+        (6, 'Sra. Noemí Farías', 'noemi.farias.14@example.com', '+502 1357 5562'),
+        (7, 'Linda Garay', 'linda.garay.37@example.com', '+502 6882 7638'),
+        (8, 'Patricia Eugenia Aguayo Crespo', 'patricia.eugenia.87@example.com', '+502 7632 9037'),
+        (9, 'Indira Eugenia Cortés', 'indira.eugenia.35@live.com', '+502 8822 6012'),
+        (10, 'Jonás Canales', 'jonas.canales.99@live.com', '+502 5730 6997'),
+        (11, 'Juan Bernardo Muñoz', 'juan.bernardo.38@hotmail.com', '+502 8008 9901'),
+        (12, 'Raquel Jaime Armas', 'raquel.jaime.45@example.com', '+502 2242 9110'),
+        (13, 'Nancy Blanca Ochoa Berríos', 'nancy.blanca.99@hotmail.com', '+502 4666 7651'),
+        (14, 'Francisca Nájera', 'francisca.najera.45@example.com', '+502 2989 8923'),
+        (15, 'Srita. Virginia Barrios', 'virginia.barrios.53@example.com', '+502 1344 8136'),
+        (16, 'Gabino Longoria Bétancourt', 'gabino.longoria.58@example.com', '+502 4918 1396'),
+        (17, 'Bruno Olivares', 'bruno.olivares.54@live.com', '+502 3650 3389'),
+        (18, 'Lic. José Emilio Curiel', 'jose.emilio.15@live.com', '+502 6266 2963'),
+        (19, 'Irma Fuentes Jaramillo', 'irma.fuentes.78@example.com', '+502 5180 6024'),
+        (20, 'Uriel Enrique Tejeda', 'uriel.enrique.20@live.com', '+502 4034 9722'),
+        (21, 'Emiliano Ríos', 'emiliano.rios.90@live.com', '+502 4953 7831'),
+        (22, 'Estela Sandra Valdés', 'estela.sandra.83@example.com', '+502 9556 6031'),
+        (23, 'Jerónimo Badillo', 'jeronimo.badillo.18@example.com', '+502 8975 3260'),
+        (24, 'Alejandro Mata', 'alejandro.mata.39@hotmail.com', '+502 1170 9497'),
+        (25, 'Estela Anabel Galarza', 'estela.anabel.39@example.com', '+502 5201 9678'),
+        (26, 'Dra. Dolores Sanabria', 'dolores.sanabria.45@hotmail.com', '+502 8632 0121'),
+        (27, 'Sara María Cristina Collazo', 'sara.maria.56@example.com', '+502 5068 4848'),
+        (28, 'Dr. Gerónimo Valentín', 'geronimo.valentin.55@example.com', '+502 9094 9389'),
+        (29, 'Estefanía Viera', 'estefania.viera.44@live.com', '+502 9274 4214'),
+        (30, 'Paola Laura Nájera', 'paola.laura.92@example.com', '+502 8275 6179'),
+        (31, 'Darío Saucedo', 'dario.saucedo.91@example.com', '+502 7269 1040'),
+        (32, 'Arcelia Amelia Carmona Corral', 'arcelia.amelia.41@example.com', '+502 6304 3515'),
+        (33, 'Manuel Teodoro Barela Olmos', 'manuel.teodoro.58@hotmail.com', '+502 8689 9313'),
+        (34, 'Perla María Elena Tafoya', 'perla.maria.98@live.com', '+502 3047 6249'),
+        (35, 'Sr. Claudio Terán', 'claudio.teran.97@hotmail.com', '+502 0850 7864'),
+        (36, 'Ing. César Lozada', 'cesar.lozada.39@example.com', '+502 4333 9391'),
+        (37, 'Celia María Acosta', 'celia.maria.61@hotmail.com', '+502 0988 3684'),
+        (38, 'Dr. Patricio Caraballo', 'patricio.caraballo.37@live.com', '+502 9735 6822'),
+        (39, 'Dr. Elias Niño', 'elias.nino.50@example.com', '+502 8897 1488'),
+        (40, 'Reynaldo Raúl Abrego Zamudio', 'reynaldo.raul.73@hotmail.com', '+502 8728 2117'),
+        (41, 'Marisela Almaraz Carrasco', 'marisela.almaraz.68@example.com', '+502 3655 1614'),
+        (42, 'Georgina Grijalva Baeza', 'georgina.grijalva.27@example.com', '+502 7634 5555'),
+        (43, 'Rufino Berríos', 'rufino.berrios.78@hotmail.com', '+502 7946 1803'),
+        (44, 'Omar Armando Tejada', 'omar.armando.64@live.com', '+502 5460 6628'),
+        (45, 'Cristian Nicolás Ulloa de Jesús', 'cristian.nicolas.56@example.com', '+502 1956 6572'),
+        (46, 'Lic. Fidel Tirado', 'fidel.tirado.75@hotmail.com', '+502 1320 1654'),
+        (47, 'Jacinto Ozuna', 'jacinto.ozuna.16@example.com', '+502 2151 4014'),
+        (48, 'Luz Sierra Razo', 'luz.sierra.90@example.com', '+502 9233 2642'),
+        (49, 'Gerónimo Francisco Javier Barela', 'geronimo.francisco.64@live.com', '+502 0952 6544'),
+        (50, 'Alejandra Villalobos Urrutia', 'alejandra.villalobos.59@hotmail.com', '+502 8097 8790');
 
 - HABITACION ----------------------------
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (1, 'Individual', 963.29);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (2, 'Suite Presidencial', 5030.17);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (3, 'Matrimonial', 1559.85);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (4, 'Suite Presidencial', 5097.48);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (5, 'Suite Junior', 2634.94);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (6, 'Suite Junior', 2518.15);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (7, 'Doble', 1209.60);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (8, 'Individual', 938.25);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (9, 'Doble', 1288.27);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (10, 'Individual', 860.65);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (11, 'Suite Presidencial', 5008.83);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (12, 'Individual', 985.81);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (13, 'Matrimonial', 1510.63);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (14, 'Doble', 1241.77);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (15, 'Suite Junior', 2532.14);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (16, 'Doble', 1308.50);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (17, 'Individual', 936.43);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (18, 'Doble', 1317.69);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (19, 'Suite Junior', 2528.56);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (20, 'Individual', 948.85);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (21, 'Matrimonial', 1563.54);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (22, 'Suite Junior', 2629.58);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (23, 'Individual', 951.00);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (24, 'Suite Presidencial', 5014.76);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (25, 'Suite Junior', 2609.23);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (26, 'Individual', 887.30);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (27, 'Doble', 1280.44);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (28, 'Doble', 1263.28);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (29, 'Matrimonial', 1569.39);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (30, 'Individual', 916.47);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (31, 'Individual', 864.69);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (32, 'Suite Presidencial', 5149.89);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (33, 'Individual', 995.35);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (34, 'Doble', 1224.95);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (35, 'Suite Junior', 2572.20);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (36, 'Suite Junior', 2635.37);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (37, 'Doble', 1256.85);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (38, 'Suite Junior', 2539.78);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (39, 'Suite Junior', 2542.79);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (40, 'Suite Presidencial', 5143.60);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (41, 'Individual', 949.28);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (42, 'Suite Junior', 2523.22);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (43, 'Matrimonial', 1532.66);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (44, 'Individual', 936.88);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (45, 'Individual', 859.14);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (46, 'Matrimonial', 1508.57);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (47, 'Individual', 921.52);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (48, 'Individual', 873.61);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (49, 'Individual', 862.02);
-INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES (50, 'Doble', 1210.28);
+INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES
+        (1, 'Suite Junior', 2579.37),
+        (2, 'Individual', 979.12),
+        (3, 'Individual', 952.04),
+        (4, 'Individual', 952.26),
+        (5, 'Individual', 962.63),
+        (6, 'Suite Presidencial', 5051.03),
+        (7, 'Matrimonial', 1565.21),
+        (8, 'Suite Junior', 2500.49),
+        (9, 'Suite Presidencial', 5131.38),
+        (10, 'Matrimonial', 1645.78),
+        (11, 'Doble', 1276.15),
+        (12, 'Individual', 980.58),
+        (13, 'Matrimonial', 1626.25),
+        (14, 'Individual', 941.35),
+        (15, 'Doble', 1256.09),
+        (16, 'Doble', 1280.91),
+        (17, 'Individual', 987.77),
+        (18, 'Individual', 898.62),
+        (19, 'Individual', 866.78),
+        (20, 'Matrimonial', 1631.81),
+        (21, 'Matrimonial', 1535.92),
+        (22, 'Doble', 1331.70),
+        (23, 'Individual', 862.85),
+        (24, 'Suite Junior', 2622.40),
+        (25, 'Individual', 964.88),
+        (26, 'Doble', 1298.96),
+        (27, 'Individual', 874.77),
+        (28, 'Individual', 980.86),
+        (29, 'Suite Junior', 2644.65),
+        (30, 'Individual', 963.29),
+        (31, 'Suite Presidencial', 5030.17),
+        (32, 'Matrimonial', 1559.85),
+        (33, 'Suite Presidencial', 5097.48),
+        (34, 'Suite Junior', 2634.94),
+        (35, 'Suite Junior', 2518.15),
+        (36, 'Doble', 1209.60),
+        (37, 'Individual', 938.25),
+        (38, 'Doble', 1288.27),
+        (39, 'Individual', 860.65),
+        (40, 'Suite Presidencial', 5008.83),
+        (41, 'Individual', 985.81),
+        (42, 'Matrimonial', 1510.63),
+        (43, 'Doble', 1241.77),
+        (44, 'Suite Junior', 2532.14),
+        (45, 'Doble', 1308.50),
+        (46, 'Individual', 936.43),
+        (47, 'Doble', 1317.69),
+        (48, 'Suite Junior', 2528.56),
+        (49, 'Individual', 948.85),
+        (50, 'Matrimonial', 1563.54);
 
 - EMPLEADO -----------------------------
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (1, 'Sergio Garay', 'Camarista');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (2, 'Arturo Bahena Girón', 'Cocinero');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (3, 'Alejandro Jesús Batista', 'Mantenimiento');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (4, 'Elsa Leiva', 'Camarista');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (5, 'Dolores Natalia Centeno Vásquez', 'Chef');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (6, 'Ing. Elvira Rojas', 'Cocinero');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (7, 'Cynthia Ariadna Calderón', 'Chef');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (8, 'Irma Lorena Partida', 'Chef');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (9, 'Ana Tania Calvillo Ballesteros', 'Recepcionista');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (10, 'Ilse Barbara Guzmán', 'Chef');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (11, 'Eugenio Terán', 'Camarista');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (12, 'Carlota Lorena Elizondo Leiva', 'Mantenimiento');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (13, 'Emilia Ángela Quintero Urbina', 'Chef');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (14, 'Alvaro Reynaldo Alejandro', 'Chef');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (15, 'Genaro Emilio Palomo', 'Botones');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (16, 'María Teresa Dolores Pacheco Bahena', 'Conserje');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (17, 'Juan Abel Orellana Jaimes', 'Gerente');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (18, 'Fabiola Lorena Valadez Ruiz', 'Cocinero');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (19, 'Eugenio Ignacio Gamboa Baeza', 'Conserje');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (20, 'Lic. Ana María Martínez', 'Cocinero');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (21, 'Alvaro Viera Romero', 'Gerente');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (22, 'Mónica Cotto', 'Mantenimiento');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (23, 'Pedro Blanco Escamilla', 'Mesero');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (24, 'Teodoro Armando Gollum', 'Gerente');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (25, 'Bianca Ofelia Gurule', 'Contador');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (26, 'Lic. Amalia Bonilla', 'Conserje');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (27, 'Sofía Paola Vallejo', 'Camarista');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (28, 'Graciela Ibarra', 'Recepcionista');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (29, 'Jacobo Griego', 'Contador');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (30, 'Lic. Cristobal Macías', 'Chef');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (31, 'Graciela Anel Aguirre Reynoso', 'Chef');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (32, 'Lic. Asunción Benavides', 'Camarista');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (33, 'Dolores Santillán', 'Camarista');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (34, 'Dr. Jos Barrientos', 'Botones');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (35, 'José Luis Linares', 'Cocinero');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (36, 'Mario Ricardo Madrid Tafoya', 'Botones');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (37, 'Rodolfo Luna Cano', 'Gerente');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (38, 'Guillermo Claudio Carbajal Uribe', 'Mesero');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (39, 'Héctor Horacio Zedillo Gaitán', 'Conserje');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (40, 'Delia Jaime Santiago', 'Camarista');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (41, 'Esmeralda Ana Caballero Piña', 'Cocinero');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (42, 'Sr. Abel Merino', 'Conserje');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (43, 'Guillermo Emiliano Quintanilla Ureña', 'Gerente');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (44, 'Noemí Adela Carrasco', 'Mesero');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (45, 'Eduardo Ricardo Aranda', 'Contador');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (46, 'Paola Urías Cordero', 'Botones');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (47, 'Camila Amalia Manzanares', 'Gerente');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (48, 'Amalia Muñiz Gaitán', 'Chef');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (49, 'Camilo Moreno', 'Botones');
-INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES (50, 'Leticia Correa', 'Recepcionista');
+INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES
+        (1, 'Sergio Garay', 'Contador'),
+        (2, 'Arturo Bahena Girón', 'Recepcionista'),
+        (3, 'Alejandro Jesús Batista', 'Camarista'),
+        (4, 'Elsa Leiva', 'Recepcionista'),
+        (5, 'Dolores Natalia Centeno Vásquez', 'Mantenimiento'),
+        (6, 'Ing. Elvira Rojas', 'Conserje'),
+        (7, 'Cynthia Ariadna Calderón', 'Camarista'),
+        (8, 'Irma Lorena Partida', 'Cocinero'),
+        (9, 'Ana Tania Calvillo Ballesteros', 'Cocinero'),
+        (10, 'Ilse Barbara Guzmán', 'Cocinero'),
+        (11, 'Eugenio Terán', 'Botones'),
+        (12, 'Carlota Lorena Elizondo Leiva', 'Contador'),
+        (13, 'Emilia Ángela Quintero Urbina', 'Mesero'),
+        (14, 'Alvaro Reynaldo Alejandro', 'Mantenimiento'),
+        (15, 'Genaro Emilio Palomo', 'Mesero'),
+        (16, 'María Teresa Dolores Pacheco Bahena', 'Gerente'),
+        (17, 'Juan Abel Orellana Jaimes', 'Contador'),
+        (18, 'Fabiola Lorena Valadez Ruiz', 'Cocinero'),
+        (19, 'Eugenio Ignacio Gamboa Baeza', 'Camarista'),
+        (20, 'Lic. Ana María Martínez', 'Contador'),
+        (21, 'Alvaro Viera Romero', 'Botones'),
+        (22, 'Mónica Cotto', 'Camarista'),
+        (23, 'Pedro Blanco Escamilla', 'Recepcionista'),
+        (24, 'Teodoro Armando Gollum', 'Botones'),
+        (25, 'Bianca Ofelia Gurule', 'Recepcionista'),
+        (26, 'Lic. Amalia Bonilla', 'Camarista'),
+        (27, 'Sofía Paola Vallejo', 'Cocinero'),
+        (28, 'Graciela Ibarra', 'Mesero'),
+        (29, 'Jacobo Griego', 'Mantenimiento'),
+        (30, 'Lic. Cristobal Macías', 'Contador'),
+        (31, 'Graciela Anel Aguirre Reynoso', 'Contador'),
+        (32, 'Lic. Asunción Benavides', 'Cocinero'),
+        (33, 'Dolores Santillán', 'Mantenimiento'),
+        (34, 'Dr. Jos Barrientos', 'Recepcionista'),
+        (35, 'José Luis Linares', 'Mesero'),
+        (36, 'Mario Ricardo Madrid Tafoya', 'Mantenimiento'),
+        (37, 'Rodolfo Luna Cano', 'Recepcionista'),
+        (38, 'Guillermo Claudio Carbajal Uribe', 'Mantenimiento'),
+        (39, 'Héctor Horacio Zedillo Gaitán', 'Gerente'),
+        (40, 'Delia Jaime Santiago', 'Contador'),
+        (41, 'Esmeralda Ana Caballero Piña', 'Gerente'),
+        (42, 'Sr. Abel Merino', 'Mantenimiento'),
+        (43, 'Guillermo Emiliano Quintanilla Ureña', 'Botones'),
+        (44, 'Noemí Adela Carrasco', 'Contador'),
+        (45, 'Eduardo Ricardo Aranda', 'Mesero'),
+        (46, 'Paola Urías Cordero', 'Cocinero'),
+        (47, 'Camila Amalia Manzanares', 'Gerente'),
+        (48, 'Amalia Muñiz Gaitán', 'Cocinero'),
+        (49, 'Camilo Moreno', 'Recepcionista'),
+        (50, 'Leticia Correa', 'Chef');

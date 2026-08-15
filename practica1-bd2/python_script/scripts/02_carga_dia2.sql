@@ -1,54 +1,55 @@
 
 USE hotel_db;
 
--- ---------------------------- RESERVA -----------------------------
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (1, '2026-07-06', '2026-07-20', 36, 20);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (2, '2026-07-14', '2026-07-25', 7, 9);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (3, '2026-06-23', '2026-06-25', 7, 48);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (4, '2026-07-02', '2026-07-05', 18, 19);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (5, '2026-07-04', '2026-07-08', 46, 22);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (6, '2026-06-21', '2026-07-02', 41, 17);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (7, '2026-07-01', '2026-07-09', 17, 4);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (8, '2026-06-17', '2026-06-28', 28, 18);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (9, '2026-06-16', '2026-06-17', 22, 50);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (10, '2026-06-19', '2026-06-30', 17, 11);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (11, '2026-07-08', '2026-07-16', 36, 46);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (12, '2026-06-28', '2026-07-07', 1, 8);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (13, '2026-06-17', '2026-06-29', 10, 35);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (14, '2026-06-16', '2026-06-30', 24, 38);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (15, '2026-07-02', '2026-07-05', 28, 9);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (16, '2026-06-16', '2026-06-21', 24, 3);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (17, '2026-07-13', '2026-07-19', 14, 44);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (18, '2026-06-22', '2026-07-03', 7, 23);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (19, '2026-07-09', '2026-07-18', 27, 40);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (20, '2026-07-08', '2026-07-11', 16, 11);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (21, '2026-07-10', '2026-07-23', 12, 27);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (22, '2026-06-15', '2026-06-18', 48, 22);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (23, '2026-07-10', '2026-07-17', 43, 48);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (24, '2026-07-10', '2026-07-14', 18, 11);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (25, '2026-07-10', '2026-07-22', 7, 25);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (26, '2026-07-12', '2026-07-13', 31, 15);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (27, '2026-06-21', '2026-07-05', 30, 23);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (28, '2026-06-24', '2026-07-08', 15, 15);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (29, '2026-06-15', '2026-06-26', 13, 26);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (30, '2026-06-25', '2026-06-30', 5, 50);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (31, '2026-06-23', '2026-06-29', 42, 33);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (32, '2026-06-27', '2026-07-08', 35, 22);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (33, '2026-07-15', '2026-07-16', 8, 17);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (34, '2026-06-20', '2026-06-30', 17, 3);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (35, '2026-06-18', '2026-06-28', 28, 23);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (36, '2026-07-08', '2026-07-21', 21, 28);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (37, '2026-07-04', '2026-07-13', 8, 25);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (38, '2026-07-13', '2026-07-23', 13, 17);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (39, '2026-06-16', '2026-06-28', 28, 1);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (40, '2026-07-01', '2026-07-14', 35, 44);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (41, '2026-07-08', '2026-07-20', 48, 43);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (42, '2026-06-21', '2026-06-27', 28, 5);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (43, '2026-07-15', '2026-07-26', 22, 40);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (44, '2026-06-25', '2026-07-06', 8, 47);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (45, '2026-07-13', '2026-07-18', 33, 20);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (46, '2026-07-06', '2026-07-13', 21, 26);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (47, '2026-07-07', '2026-07-12', 36, 9);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (48, '2026-06-21', '2026-06-28', 43, 25);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (49, '2026-07-06', '2026-07-18', 12, 40);
-INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES (50, '2026-07-03', '2026-07-08', 26, 36);
+-- RESERVA -----------------------------
+INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES
+        (1, '2026-07-09', '2026-07-18', 4, 48),
+        (2, '2026-06-26', '2026-06-27', 4, 38),
+        (3, '2026-07-01', '2026-07-10', 34, 11),
+        (4, '2026-06-17', '2026-06-26', 6, 12),
+        (5, '2026-06-18', '2026-06-28', 5, 44),
+        (6, '2026-07-13', '2026-07-17', 26, 8),
+        (7, '2026-07-16', '2026-07-26', 16, 38),
+        (8, '2026-07-05', '2026-07-06', 40, 6),
+        (9, '2026-06-29', '2026-07-10', 38, 37),
+        (10, '2026-07-02', '2026-07-08', 17, 14),
+        (11, '2026-07-07', '2026-07-19', 21, 16),
+        (12, '2026-06-24', '2026-07-01', 9, 43),
+        (13, '2026-07-06', '2026-07-11', 30, 21),
+        (14, '2026-07-15', '2026-07-28', 5, 1),
+        (15, '2026-06-30', '2026-07-10', 37, 7),
+        (16, '2026-06-18', '2026-06-27', 14, 33),
+        (17, '2026-06-24', '2026-06-27', 23, 5),
+        (18, '2026-07-14', '2026-07-18', 24, 19),
+        (19, '2026-06-21', '2026-06-29', 35, 46),
+        (20, '2026-06-25', '2026-07-05', 42, 34),
+        (21, '2026-06-16', '2026-06-27', 36, 20),
+        (22, '2026-07-15', '2026-07-26', 7, 9),
+        (23, '2026-06-24', '2026-06-26', 7, 48),
+        (24, '2026-07-03', '2026-07-06', 18, 19),
+        (25, '2026-07-05', '2026-07-09', 46, 22),
+        (26, '2026-06-22', '2026-07-03', 41, 17),
+        (27, '2026-07-02', '2026-07-10', 17, 4),
+        (28, '2026-06-18', '2026-06-29', 28, 18),
+        (29, '2026-06-17', '2026-06-18', 22, 50),
+        (30, '2026-06-20', '2026-07-01', 17, 11),
+        (31, '2026-07-09', '2026-07-17', 36, 46),
+        (32, '2026-06-29', '2026-07-08', 1, 8),
+        (33, '2026-06-18', '2026-06-30', 10, 35),
+        (34, '2026-06-17', '2026-07-01', 24, 38),
+        (35, '2026-07-03', '2026-07-06', 28, 9),
+        (36, '2026-06-17', '2026-06-22', 24, 3),
+        (37, '2026-07-14', '2026-07-20', 14, 44),
+        (38, '2026-06-23', '2026-07-04', 7, 23),
+        (39, '2026-07-10', '2026-07-19', 27, 40),
+        (40, '2026-07-09', '2026-07-12', 16, 11),
+        (41, '2026-07-11', '2026-07-24', 12, 27),
+        (42, '2026-06-16', '2026-06-19', 48, 22),
+        (43, '2026-07-11', '2026-07-18', 43, 48),
+        (44, '2026-07-11', '2026-07-15', 18, 11),
+        (45, '2026-07-11', '2026-07-23', 7, 25),
+        (46, '2026-07-13', '2026-07-14', 31, 15),
+        (47, '2026-06-22', '2026-07-06', 30, 23),
+        (48, '2026-06-25', '2026-07-09', 15, 15),
+        (49, '2026-06-16', '2026-06-27', 13, 26),
+        (50, '2026-06-26', '2026-07-01', 5, 50);

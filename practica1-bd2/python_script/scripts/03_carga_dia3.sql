@@ -1,54 +1,55 @@
 
 USE hotel_db;
 
--- ------------------------- LOG_HABITACION (1) ----------------------
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-15 03:54:15.871085', 'disponible', 18);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-15 08:10:04.358368', 'limpieza', 22);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-15 09:41:58.699171', 'ocupada', 32);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-15 12:04:49.970074', 'mantenimiento', 18);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-15 17:49:46.259763', 'disponible', 34);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-15 19:55:02.014817', 'limpieza', 32);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-16 01:43:17.738974', 'limpieza', 42);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-16 06:12:07.757055', 'disponible', 19);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-16 08:37:52.012179', 'mantenimiento', 43);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-16 14:01:22.592538', 'mantenimiento', 28);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-16 19:22:45.329535', 'limpieza', 18);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-16 22:38:59.456052', 'ocupada', 21);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-17 00:26:34.453120', 'ocupada', 13);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-17 03:14:04.743051', 'mantenimiento', 7);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-17 05:32:19.121463', 'ocupada', 20);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-17 07:17:53.254195', 'mantenimiento', 3);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-17 08:53:11.985491', 'ocupada', 41);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-17 13:00:06.998353', 'mantenimiento', 31);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-17 17:28:28.191673', 'disponible', 17);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-17 21:36:20.260191', 'limpieza', 32);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-17 23:13:00.979988', 'disponible', 10);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-18 02:04:37.975219', 'mantenimiento', 6);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-18 04:12:13.776797', 'limpieza', 39);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-18 10:02:53.013448', 'limpieza', 29);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-18 14:22:48.630562', 'limpieza', 20);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-18 20:01:52.269807', 'disponible', 49);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-18 22:42:05.547309', 'disponible', 11);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-19 00:53:40.626021', 'ocupada', 1);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-19 05:22:25.248678', 'limpieza', 19);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-19 06:36:43.989975', 'mantenimiento', 45);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-19 10:41:27.234738', 'mantenimiento', 41);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-19 16:24:19.213761', 'ocupada', 28);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-19 17:58:33.892856', 'ocupada', 18);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-19 20:02:37.066839', 'mantenimiento', 39);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-20 02:00:55.527325', 'disponible', 30);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-20 05:45:21.515793', 'mantenimiento', 33);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-20 11:16:49.600143', 'disponible', 28);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-20 14:55:05.627265', 'disponible', 15);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-20 20:32:07.429175', 'mantenimiento', 37);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-20 22:20:55.612876', 'limpieza', 34);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-21 03:19:12.803182', 'limpieza', 41);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-21 07:24:43.168046', 'limpieza', 22);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-21 11:06:50.067445', 'ocupada', 22);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-21 15:51:21.369664', 'limpieza', 49);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-21 20:53:50.462002', 'mantenimiento', 17);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-22 00:01:39.885811', 'disponible', 43);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-22 05:31:05.942649', 'ocupada', 34);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-22 09:10:54.465357', 'limpieza', 49);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-22 10:24:12.041256', 'ocupada', 19);
-INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES ('2026-06-22 15:20:56.549514', 'disponible', 2);
+-- LOG_HABITACION  ----------------------
+INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES
+        ('2026-06-16 03:10:38.636746', 'disponible', 50),
+        ('2026-06-16 05:29:45.243541', 'disponible', 20),
+        ('2026-06-16 11:13:43.637079', 'limpieza', 46),
+        ('2026-06-16 13:18:21.361241', 'ocupada', 7),
+        ('2026-06-16 17:13:04.990819', 'disponible', 37),
+        ('2026-06-16 18:35:39.440006', 'mantenimiento', 5),
+        ('2026-06-17 00:17:00.453273', 'limpieza', 32),
+        ('2026-06-17 01:44:24.119733', 'limpieza', 46),
+        ('2026-06-17 04:11:35.889174', 'mantenimiento', 40),
+        ('2026-06-17 10:01:06.376630', 'limpieza', 47),
+        ('2026-06-17 15:18:27.269716', 'ocupada', 6),
+        ('2026-06-17 19:14:55.525426', 'limpieza', 37),
+        ('2026-06-18 00:57:19.878164', 'disponible', 32),
+        ('2026-06-18 04:08:51.100588', 'mantenimiento', 17),
+        ('2026-06-18 07:26:47.725702', 'mantenimiento', 36),
+        ('2026-06-18 08:59:59.815474', 'ocupada', 47),
+        ('2026-06-18 13:31:35.610468', 'ocupada', 45),
+        ('2026-06-18 18:13:21.125132', 'limpieza', 2),
+        ('2026-06-18 19:31:35.549178', 'ocupada', 20),
+        ('2026-06-19 00:55:06.129537', 'mantenimiento', 28),
+        ('2026-06-19 06:16:28.866534', 'limpieza', 18),
+        ('2026-06-19 09:32:42.993051', 'ocupada', 21),
+        ('2026-06-19 11:20:17.990119', 'ocupada', 13),
+        ('2026-06-19 14:07:48.280050', 'mantenimiento', 7),
+        ('2026-06-19 16:26:02.658462', 'ocupada', 20),
+        ('2026-06-19 18:11:36.791194', 'mantenimiento', 3),
+        ('2026-06-19 19:46:55.522490', 'ocupada', 41),
+        ('2026-06-19 23:53:50.535352', 'mantenimiento', 31),
+        ('2026-06-20 04:22:11.728672', 'disponible', 17),
+        ('2026-06-20 08:30:03.797190', 'limpieza', 32),
+        ('2026-06-20 10:06:44.516987', 'disponible', 10),
+        ('2026-06-20 12:58:21.512218', 'mantenimiento', 6),
+        ('2026-06-20 15:05:57.313796', 'limpieza', 39),
+        ('2026-06-20 20:56:36.550447', 'limpieza', 29),
+        ('2026-06-21 01:16:32.167561', 'limpieza', 20),
+        ('2026-06-21 06:55:35.806806', 'disponible', 49),
+        ('2026-06-21 09:35:49.084308', 'disponible', 11),
+        ('2026-06-21 11:47:24.163020', 'ocupada', 1),
+        ('2026-06-21 16:16:08.785677', 'limpieza', 19),
+        ('2026-06-21 17:30:27.526974', 'mantenimiento', 45),
+        ('2026-06-21 21:35:10.771737', 'mantenimiento', 41),
+        ('2026-06-22 03:18:02.750760', 'ocupada', 28),
+        ('2026-06-22 04:52:17.429855', 'ocupada', 18),
+        ('2026-06-22 06:56:20.603838', 'mantenimiento', 39),
+        ('2026-06-22 12:54:39.064324', 'disponible', 30),
+        ('2026-06-22 16:39:05.052792', 'mantenimiento', 33),
+        ('2026-06-22 22:10:33.137142', 'disponible', 28),
+        ('2026-06-23 01:48:49.164264', 'disponible', 15),
+        ('2026-06-23 07:25:50.966174', 'mantenimiento', 37),
+        ('2026-06-23 09:14:39.149875', 'limpieza', 34);

@@ -53,7 +53,6 @@ DOMINIOS_CORREO = [
 # Funciones de utilidad
 
 def sql_str(valor: str) -> str:
-    #Escapa y entrecomilla un valor de texto para SQL de mysql
     return "'" + valor.replace("'", "''") + "'"
 
 
@@ -64,7 +63,8 @@ def f_fecha(f: date) -> str:
 def f_datetime(ts: datetime) -> str:
     return f"{ts:%Y-%m-%d %H:%M:%S}.{ts.microsecond:06d}"
 
-# GENERACION ARCHIVO 01
+# Metodos de utileria 
+
 def email_desde_nombre(nombre: str) -> str:
     normalizado = unicodedata.normalize("NFKD", nombre)
     ascii_only = normalizado.encode("ascii", "ignore").decode().lower()
@@ -79,9 +79,8 @@ def email_desde_nombre(nombre: str) -> str:
 
 
 def telefono() -> str:
-    lada = random.choice(["55", "56", "81", "33", "44", "22", "99", "662", "614"])
     numero = f"{random.randint(1000000, 99999999):08d}"
-    return f"+52 {lada} {numero[:4]} {numero[4:]}"
+    return f"+502 {numero[:4]} {numero[4:]}"
 
 
 # metodo que genera a los clientes
@@ -119,9 +118,6 @@ def generar_empleados():
     return empleados
 
 # metodo que genera las reservas
-# Las FKs (CLIENTE_id_cliente, HABITACION_id_habitacion) se eligen
-# dentro del rango 1..50, que son exactamente los ids generados en el
-# archivo 01, así que nunca hay FKs huérfanas.
 
 def generar_reservas():
     reservas = []
@@ -184,30 +180,36 @@ def generar_logs(inicio: datetime, n: int):
     return logs
 
 
+def insert_multi(tabla: str, columnas: list, filas: list) -> str:
+    cols = ", ".join(columnas)
+    vals = ",\n        ".join(f"({fila})" for fila in filas)
+    return f"INSERT INTO {tabla} ({cols}) VALUES\n        {vals};\n"
+
+
 def escribir_archivo_01(clientes, habitaciones, empleados):
     texto = ""
     texto += "\nUSE hotel_db;\n\n"
 
     texto += "- CLIENTE -----------------------------\n"
-    for c in clientes:
-        texto += (
-            f"INSERT INTO CLIENTE (id_cliente, nombre, correo, telefono) VALUES "
-            f"({c['id']}, {sql_str(c['nombre'])}, {sql_str(c['correo'])}, {sql_str(c['telefono'])});\n"
-        )
+    texto += insert_multi(
+        "CLIENTE",
+        ["id_cliente", "nombre", "correo", "telefono"],
+        [f"{c['id']}, {sql_str(c['nombre'])}, {sql_str(c['correo'])}, {sql_str(c['telefono'])}" for c in clientes],
+    )
 
     texto += "\n- HABITACION ----------------------------\n"
-    for h in habitaciones:
-        texto += (
-            f"INSERT INTO HABITACION (id_habitacion, tipo, precio) VALUES "
-            f"({h['id']}, {sql_str(h['tipo'])}, {h['precio']:.2f});\n"
-        )
+    texto += insert_multi(
+        "HABITACION",
+        ["id_habitacion", "tipo", "precio"],
+        [f"{h['id']}, {sql_str(h['tipo'])}, {h['precio']:.2f}" for h in habitaciones],
+    )
 
     texto += "\n- EMPLEADO -----------------------------\n"
-    for e in empleados:
-        texto += (
-            f"INSERT INTO EMPLEADO (id_empleado, nombre, puesto) VALUES "
-            f"({e['id']}, {sql_str(e['nombre'])}, {sql_str(e['puesto'])});\n"
-        )
+    texto += insert_multi(
+        "EMPLEADO",
+        ["id_empleado", "nombre", "puesto"],
+        [f"{e['id']}, {sql_str(e['nombre'])}, {sql_str(e['puesto'])}" for e in empleados],
+    )
 
     return texto
 
@@ -216,14 +218,16 @@ def escribir_archivo_02(reservas):
     texto = ""
     texto += "\nUSE hotel_db;\n\n"
 
-    texto += "-- ---------------------------- RESERVA -----------------------------\n"
-    for r in reservas:
-        texto += (
-            f"INSERT INTO RESERVA (id_reserva, fecha_entrada, fecha_salida, "
-            f"CLIENTE_id_cliente, HABITACION_id_habitacion) VALUES "
-            f"({r['id']}, '{f_fecha(r['fecha_entrada'])}', '{f_fecha(r['fecha_salida'])}', "
-            f"{r['id_cliente']}, {r['id_habitacion']});\n"
-        )
+    texto += "-- RESERVA -----------------------------\n"
+    texto += insert_multi(
+        "RESERVA",
+        ["id_reserva", "fecha_entrada", "fecha_salida", "CLIENTE_id_cliente", "HABITACION_id_habitacion"],
+        [
+            f"{r['id']}, '{f_fecha(r['fecha_entrada'])}', '{f_fecha(r['fecha_salida'])}', "
+            f"{r['id_cliente']}, {r['id_habitacion']}"
+            for r in reservas
+        ],
+    )
 
     return texto
 
@@ -232,12 +236,15 @@ def escribir_archivo_03(logs):
     texto = ""
     texto += "\nUSE hotel_db;\n\n"
 
-    texto += "-- ------------------------- LOG_HABITACION (1) ----------------------\n"
-    for lg in logs:
-        texto += (
-            f"INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES "
-            f"('{f_datetime(lg['timestamp'])}', {sql_str(lg['status'])}, {lg['id_habitacion']});\n"
-        )
+    texto += "-- LOG_HABITACION  ----------------------\n"
+    texto += insert_multi(
+        "LOG_HABITACION",
+        ["timestamp", "status", "HABITACION_id_habitacion"],
+        [
+            f"'{f_datetime(lg['timestamp'])}', {sql_str(lg['status'])}, {lg['id_habitacion']}"
+            for lg in logs
+        ],
+    )
 
     return texto
 
@@ -246,14 +253,16 @@ def escribir_archivo_04(pagos):
     texto = ""
     texto += "\nUSE hotel_db;\n\n"
 
-    texto += "-- ----------------------------- PAGO -------------------------------\n"
-    for p in pagos:
-        texto += (
-            f"INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, "
-            f"RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES "
-            f"({p['id']}, '{f_datetime(p['fecha_pago'])}', {p['monto']:.2f}, "
-            f"{sql_str(p['metodo_pago'])}, {p['id_reserva']}, {p['id_empleado']});\n"
-        )
+    texto += "-- PAGO -------------------------------\n"
+    texto += insert_multi(
+        "PAGO",
+        ["id_pago", "fecha_pago", "monto", "metodo_pago", "RESERVA_id_reserva", "EMPLEADO_id_empleado"],
+        [
+            f"{p['id']}, '{f_datetime(p['fecha_pago'])}', {p['monto']:.2f}, "
+            f"{sql_str(p['metodo_pago'])}, {p['id_reserva']}, {p['id_empleado']}"
+            for p in pagos
+        ],
+    )
 
     return texto
 
@@ -262,17 +271,20 @@ def escribir_archivo_05(logs):
     texto = ""
     texto += "\nUSE hotel_db;\n\n"
 
-    texto += "-- ------------------------- LOG_HABITACION (2) ----------------------\n"
-    for lg in logs:
-        texto += (
-            f"INSERT INTO LOG_HABITACION (timestamp, status, HABITACION_id_habitacion) VALUES "
-            f"('{f_datetime(lg['timestamp'])}', {sql_str(lg['status'])}, {lg['id_habitacion']});\n"
-        )
+    texto += "-- LOG_HABITACION  ----------------------\n"
+    texto += insert_multi(
+        "LOG_HABITACION",
+        ["timestamp", "status", "HABITACION_id_habitacion"],
+        [
+            f"'{f_datetime(lg['timestamp'])}', {sql_str(lg['status'])}, {lg['id_habitacion']}"
+            for lg in logs
+        ],
+    )
 
     return texto
 
 
-# ---------------------------------------------------------------------------
+# GENERACION DE LOS ARCHIVO ---------------------------------------------------------------------------
 def main():
     clientes     = generar_clientes()
     habitaciones = generar_habitaciones()
@@ -297,5 +309,6 @@ def main():
         with open(ruta, "w", encoding="utf-8") as fh:
             fh.write(contenido)
         print(f"Generado: {ruta}")
+        
 if __name__ == "__main__":
     main()

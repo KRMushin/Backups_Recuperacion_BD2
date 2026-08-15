@@ -1,54 +1,55 @@
 
 USE hotel_db;
 
--- ----------------------------- PAGO -------------------------------
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (1, '2026-07-06 12:18:13.000000', 13283.90, 'PayPal', 1, 38);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (2, '2026-07-23 18:20:29.000000', 14170.97, 'PayPal', 2, 29);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (3, '2026-06-28 11:32:30.000000', 1747.22, 'Efectivo', 3, 43);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (4, '2026-07-02 12:32:42.000000', 7585.68, 'Tarjeta de débito', 4, 22);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (5, '2026-07-05 20:15:43.000000', 10518.32, 'Transferencia', 5, 15);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (6, '2026-07-03 11:09:01.000000', 10300.73, 'Tarjeta de crédito', 6, 16);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (7, '2026-07-08 17:54:49.000000', 40779.84, 'Tarjeta de crédito', 7, 30);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (8, '2026-06-23 18:36:12.000000', 14494.59, 'PayPal', 8, 32);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (9, '2026-06-19 11:09:41.000000', 1210.28, 'Tarjeta de crédito', 9, 49);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (10, '2026-07-02 20:56:06.000000', 55097.13, 'PayPal', 10, 15);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (11, '2026-07-10 20:44:33.000000', 12068.56, 'PayPal', 11, 4);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (12, '2026-07-06 11:58:54.000000', 8444.25, 'Tarjeta de crédito', 12, 30);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (13, '2026-06-21 20:29:42.000000', 30866.40, 'Tarjeta de débito', 13, 36);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (14, '2026-06-26 20:57:28.000000', 35556.92, 'Tarjeta de débito', 14, 47);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (15, '2026-07-06 14:53:58.000000', 3864.81, 'Tarjeta de débito', 15, 29);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (16, '2026-06-18 19:55:30.000000', 7799.25, 'PayPal', 16, 17);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (17, '2026-07-16 18:17:49.000000', 5621.28, 'Tarjeta de débito', 17, 32);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (18, '2026-07-02 11:17:28.000000', 10461.00, 'Tarjeta de crédito', 18, 46);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (19, '2026-07-13 11:17:21.000000', 46292.40, 'Transferencia', 19, 35);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (20, '2026-07-08 10:09:14.000000', 15026.49, 'PayPal', 20, 45);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (21, '2026-07-14 19:13:04.000000', 16645.72, 'PayPal', 21, 27);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (22, '2026-06-17 16:29:26.000000', 7888.74, 'Tarjeta de crédito', 22, 14);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (23, '2026-07-16 14:57:49.000000', 6115.27, 'Tarjeta de débito', 23, 45);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (24, '2026-07-10 20:36:24.000000', 20035.32, 'PayPal', 24, 1);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (25, '2026-07-21 12:48:24.000000', 31310.76, 'PayPal', 25, 35);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (26, '2026-07-16 20:38:57.000000', 2532.14, 'Efectivo', 26, 32);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (27, '2026-06-28 12:27:31.000000', 13314.00, 'Tarjeta de crédito', 27, 25);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (28, '2026-07-04 18:43:51.000000', 35449.96, 'PayPal', 28, 47);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (29, '2026-06-17 15:58:08.000000', 9760.30, 'Tarjeta de débito', 29, 35);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (30, '2026-06-25 14:37:36.000000', 6051.40, 'Tarjeta de crédito', 30, 6);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (31, '2026-06-29 10:55:29.000000', 5972.10, 'Efectivo', 31, 4);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (32, '2026-07-01 14:20:13.000000', 28925.38, 'PayPal', 32, 21);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (33, '2026-07-17 20:56:24.000000', 936.43, 'Transferencia', 33, 49);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (34, '2026-07-03 14:16:53.000000', 15598.50, 'Tarjeta de crédito', 34, 31);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (35, '2026-06-18 19:34:03.000000', 9510.00, 'Transferencia', 35, 15);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (36, '2026-07-10 20:41:02.000000', 16422.64, 'Tarjeta de crédito', 36, 16);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (37, '2026-07-07 08:39:09.000000', 23483.07, 'Efectivo', 37, 9);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (38, '2026-07-20 18:07:36.000000', 9364.30, 'Efectivo', 38, 30);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (39, '2026-06-24 20:23:10.000000', 11559.48, 'Tarjeta de débito', 39, 39);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (40, '2026-07-04 20:52:10.000000', 12179.44, 'Transferencia', 40, 7);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (41, '2026-07-08 12:36:43.000000', 18391.92, 'PayPal', 41, 26);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (42, '2026-06-24 09:37:44.000000', 15809.64, 'Efectivo', 42, 7);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (43, '2026-07-26 20:19:54.000000', 56579.60, 'Tarjeta de débito', 43, 8);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (44, '2026-07-07 17:50:02.000000', 10136.72, 'Transferencia', 44, 35);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (45, '2026-07-19 18:23:04.000000', 4744.25, 'Tarjeta de débito', 45, 42);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (46, '2026-07-11 08:54:26.000000', 6211.10, 'PayPal', 46, 7);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (47, '2026-07-13 13:40:57.000000', 6441.35, 'PayPal', 47, 46);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (48, '2026-06-23 14:11:46.000000', 18264.61, 'Tarjeta de débito', 48, 42);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (49, '2026-07-14 17:51:58.000000', 61723.20, 'Tarjeta de débito', 49, 50);
-INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES (50, '2026-07-10 15:27:52.000000', 13176.85, 'Tarjeta de débito', 50, 18);
+-- PAGO -------------------------------
+INSERT INTO PAGO (id_pago, fecha_pago, monto, metodo_pago, RESERVA_id_reserva, EMPLEADO_id_empleado) VALUES
+        (1, '2026-07-13 13:41:32.000000', 22757.04, 'PayPal', 1, 44),
+        (2, '2026-06-30 13:01:07.000000', 1288.27, 'Transferencia', 2, 12),
+        (3, '2026-07-10 12:02:06.000000', 11485.35, 'Tarjeta de débito', 3, 28),
+        (4, '2026-06-22 19:50:20.000000', 8825.22, 'PayPal', 4, 39),
+        (5, '2026-06-26 09:24:57.000000', 25321.40, 'Tarjeta de débito', 5, 13),
+        (6, '2026-07-17 08:45:27.000000', 10001.96, 'Tarjeta de crédito', 6, 34),
+        (7, '2026-07-28 16:43:46.000000', 12882.70, 'Efectivo', 7, 24),
+        (8, '2026-07-08 09:42:58.000000', 5051.03, 'Transferencia', 8, 40),
+        (9, '2026-07-04 18:54:07.000000', 10320.75, 'Transferencia', 9, 33),
+        (10, '2026-07-06 18:26:20.000000', 5648.10, 'PayPal', 10, 45),
+        (11, '2026-07-16 16:08:12.000000', 15370.92, 'PayPal', 11, 43),
+        (12, '2026-06-30 18:47:57.000000', 8692.39, 'Efectivo', 12, 40),
+        (13, '2026-07-10 14:35:53.000000', 7679.60, 'Tarjeta de crédito', 13, 20),
+        (14, '2026-07-24 11:27:50.000000', 33531.81, 'Tarjeta de débito', 14, 39),
+        (15, '2026-07-10 13:29:28.000000', 15652.10, 'PayPal', 15, 44),
+        (16, '2026-06-21 16:30:50.000000', 45877.32, 'Efectivo', 16, 43),
+        (17, '2026-06-24 12:32:42.000000', 2887.89, 'Tarjeta de débito', 17, 22),
+        (18, '2026-07-15 20:15:43.000000', 3467.12, 'Transferencia', 18, 15),
+        (19, '2026-06-24 10:01:02.000000', 7491.44, 'Efectivo', 19, 31),
+        (20, '2026-07-04 20:04:29.000000', 26349.40, 'PayPal', 20, 41),
+        (21, '2026-06-25 11:45:44.000000', 17949.91, 'PayPal', 21, 32),
+        (22, '2026-07-21 11:09:41.000000', 56445.18, 'Tarjeta de crédito', 22, 49),
+        (23, '2026-06-24 20:27:14.000000', 5057.12, 'Efectivo', 23, 45),
+        (24, '2026-07-07 15:03:35.000000', 2600.34, 'Efectivo', 24, 8),
+        (25, '2026-07-12 10:51:29.000000', 5326.80, 'Tarjeta de débito', 25, 36),
+        (26, '2026-07-01 13:48:57.000000', 10865.47, 'PayPal', 26, 40),
+        (27, '2026-07-13 16:27:53.000000', 7618.08, 'Tarjeta de débito', 27, 29),
+        (28, '2026-07-02 10:47:55.000000', 9884.82, 'PayPal', 28, 29),
+        (29, '2026-06-19 20:15:53.000000', 1563.54, 'Transferencia', 29, 50),
+        (30, '2026-07-02 16:31:40.000000', 14037.65, 'Efectivo', 30, 18),
+        (31, '2026-07-16 09:45:18.000000', 7491.44, 'Efectivo', 31, 18),
+        (32, '2026-07-04 13:57:34.000000', 22504.41, 'Tarjeta de crédito', 32, 9),
+        (33, '2026-06-22 11:24:44.000000', 30217.80, 'Efectivo', 33, 46),
+        (34, '2026-06-23 09:26:26.000000', 18035.78, 'Transferencia', 34, 35),
+        (35, '2026-07-06 14:03:13.000000', 15394.14, 'PayPal', 35, 25),
+        (36, '2026-06-17 20:36:24.000000', 4760.20, 'PayPal', 36, 1),
+        (37, '2026-07-19 12:48:24.000000', 15192.84, 'PayPal', 37, 35),
+        (38, '2026-07-04 19:34:51.000000', 9491.35, 'Tarjeta de débito', 38, 15),
+        (39, '2026-07-17 11:17:27.000000', 45079.47, 'PayPal', 39, 2),
+        (40, '2026-07-12 13:42:43.000000', 3828.45, 'PayPal', 40, 47),
+        (41, '2026-07-16 15:58:08.000000', 11372.01, 'Tarjeta de débito', 41, 35),
+        (42, '2026-06-16 14:37:36.000000', 3995.10, 'Tarjeta de crédito', 42, 6),
+        (43, '2026-07-21 14:08:55.000000', 17699.92, 'PayPal', 43, 12),
+        (44, '2026-07-11 12:24:20.000000', 5104.60, 'Efectivo', 44, 30),
+        (45, '2026-07-21 13:48:56.000000', 11578.56, 'PayPal', 45, 18),
+        (46, '2026-07-16 12:53:05.000000', 1256.09, 'PayPal', 46, 2),
+        (47, '2026-07-09 08:22:14.000000', 12079.90, 'Tarjeta de crédito', 47, 50),
+        (48, '2026-06-26 20:01:15.000000', 17585.26, 'Efectivo', 48, 2),
+        (49, '2026-06-25 10:15:08.000000', 14288.56, 'PayPal', 49, 43),
+        (50, '2026-06-27 17:13:29.000000', 7817.70, 'Transferencia', 50, 50);
