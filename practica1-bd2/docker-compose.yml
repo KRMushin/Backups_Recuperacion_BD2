@@ -18,14 +18,6 @@ services:
       - mysql_data:/var/lib/mysql
       - ./scripts:/scripts:ro
       - ./backups:/backups
-  opencode:
-    image: node:20
-    container_name: opencode_dev
-    working_dir: /workspace
-    volumes:
-      - .:/workspace
-    stdin_open: true
-    tty: true
-    command: sh -c "npm install -g opencode-ai && opencode"
+
 volumes:
   mysql_data:	          
